@@ -1,0 +1,285 @@
+:root {
+  --primary: #60B4D4;  
+  --secondary: #60B4D4;
+  --bg-light: #FFFCEB;
+  --bg-white: #FFFFFF;
+  --text-main: #222;
+  --font-main: 'Montserrat', Arial, sans-serif;
+  --font-hand: 'Shadows Into Light', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-main);
+  background: var(--bg-light);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  background: var(--primary);
+  padding: 18px 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+.logo {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 30px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+.nav-links a:hover, .nav-links a.active {
+  background-color: var(--secondary);
+  color: var(--text-main);
+}
+
+/* Header Hero */
+.header-hero {
+  background-color: var(--bg-white);
+  padding: 60px 20px 40px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(59, 187, 100, 0.18);
+  border-radius: 0 0 60px 60px;
+}
+.header-hero h1 {
+  font-family: var(--font-hand);
+  font-size: 3.5rem;
+  color: var(--primary);
+}
+
+/* Main Layout */
+.container {
+  max-width: 960px;
+  margin: 40px auto 80px;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-image {
+  flex: 1 1 350px;
+  max-width: 400px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(59,187,100,0.22);
+  max-height: 500px;
+  overflow: hidden;
+}
+.about-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* About Text */
+.about-text {
+  flex: 1 1 500px;
+  font-size: 1.15rem;
+  color: var(--text-main);
+}
+.about-text p {
+  margin-bottom: 24px;
+  text-align: justify;
+  font-weight: normal;
+  font-family: 'Montserrat', Arial, sans-serif;
+ 
+}
+.about-text h2 {
+  font-family: var(--font-hand);
+  font-size: 2.4rem;
+  color: var(--primary);
+  margin-bottom: 18px;
+}
+
+/* Clients List */
+
+/* Footer */
+.site-footer {
+  background-color: #000000; /* solid black */
+  color: var(--color-secondary); /* your yellow accent */
+  text-align: center;
+  padding: 20px 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  user-select: none;
+  border-top: 3px solid var(--color-primary); /* green accent line */
+  margin-top: 48px;
+  box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.site-footer:hover {
+  background-color: #111111;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .site-footer {
+    font-size: 0.9rem;
+    padding: 16px 8px;
+    border-top-width: 2px;
+  }
+  .footer-content p {
+    margin: 6px 0;
+  }
+}
+
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .about-text, .about-image {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .header-hero h1 {
+    font-size: 2.7rem;
+    padding: 0 12px;
+  }
+  /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3BBB64; /* green primary */
+  padding: 20px 40px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  position: relative;
+  user-select: none;
+}
+
+.logo {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+nav .logo {
+  font-size: 1.9rem;
+  letter-spacing: 2px;
+  color: white;          /* matches navbar text */
+  font-weight: 900;
+  text-decoration: none; /* removes underline on link */
+  cursor: pointer;
+  user-select: none;
+  padding: 0 12px 0 0;   /* spacing if needed */
+  display: inline-block;
+}
+nav .logo:hover,
+nav .logo:focus {
+  color: var(--color-secondary); /* e.g. yellow accent for hover */
+  outline: none;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #111;  /* yellow accent */
+  color: white;
+}
+
+/* Hamburger menu icon, initially hidden */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  width: 28px;
+  height: 22px;
+  justify-content: center;
+}
+
+.menu-icon span {
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive: show hamburger and hide nav links */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 60px;  /* adjust if navbar height changes */
+    background-color: #111;
+    border-radius: 12px;
+    padding: 20px 24px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    width: 170px;
+    z-index: 9999;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-icon {
+    display: flex;
+  }
+}
+
+}

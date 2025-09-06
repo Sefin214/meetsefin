@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About | Sefin Frijo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/aboutstyle.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+  <div class="logo">SEFIN FRIJO</div>
+  <div class="menu-icon" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="works.html" class="active">Works</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+  </header>
+
+  <main class="about-main container">
+    <section class="about-image">
+      <img src="images/sefinfrijo.JPG" alt="Sefin Frijo Profile">
+    </section>
+
+    <section class="about-text">
+      <p><strong>Hello! I’m Sefin Frijo</strong> a creative developer and eCommerce strategist passionate about making technology accessible and useful to everyone. I grew my skills by turning ideas into seamless digital experiences that empower and inspire users.</p>
+
+      <p>Over time, I've learned that building a successful digital presence requires empathy, creativity, and continuous learning. I bring these qualities to every project I work on bridging gaps between users and technology and helping businesses grow online.</p>
+
+      <p>Outside of work, I love exploring new tech trends, iterating on web design, and sharing knowledge with the community. I believe in working intelligently and taking breaks to snack often!</p>
+
+
+      <h2>Let's Work Together!</h2>
+      <p>Contact me: <a href="mailto:sefinfrijo1234@gmail.com">sefinfrijo1234@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-content">
+
+    <p>Sefin &copy; 2025</p>
+  </div>
+</footer>
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

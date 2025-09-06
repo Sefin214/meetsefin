@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Sefin Frijo</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="css/contact.css" />
+  <style>
+    /* CSS included below */
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+ 
+
+  <nav>
+  <div class="logo">SEFIN FRIJO</div>
+  <div class="menu-icon" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="works.html">Works</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
+  <!-- MAIN CONTACT -->
+  <main class="contact-main">
+    <h1>Contact Me</h1>
+
+    <section class="quick-contact">
+      <a href="mailto:sefinfrijo1234.com" aria-label="Email" class="contact-card email">
+        <i class="fas fa-envelope"></i> E-Mail
+      </a>
+      <a href="https://wa.me/+919497457880" target="_blank" rel="noopener" aria-label="WhatsApp" class="contact-card whatsapp">
+        <i class="fab fa-whatsapp"></i> Whatsapp
+      </a>
+      <a href="https://linkedin.com/in/sefinfrijo" target="_blank" rel="noopener" aria-label="LinkedIn" class="contact-card linkedin">
+        <i class="fab fa-linkedin"></i> Linkedin
+      </a>
+      <a href="https://instagram.com/_sefinfrijo_" target="_blank" rel="noopener" aria-label="Instagram" class="contact-card instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </section>
+
+    <form class="contact-form" action="mailto:sefinfrijo1234.com" method="post" enctype="text/plain" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="Name" type="text" placeholder="Your Name" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="Email" type="email" placeholder="Your Email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="Message" rows="6" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+  <div class="footer-content">
+
+    <p>Sefin &copy; 2025</p>
+  </div>
+</footer>
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
